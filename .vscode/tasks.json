@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Flask Run",
+        "type": "shell",
+        "command": "set FLASK_APP=app && set FLASK_DEBUG=1 && flask run",
+        "problemMatcher": [],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }

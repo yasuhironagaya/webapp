@@ -1,0 +1,42 @@
+{
+  // ターミナル起動時に仮想環境を自動で有効化
+  "python.terminal.activateEnvironment": true,
+
+  // 保存時に自動フォーマット
+  "editor.formatOnSave": true,
+
+  // 空白や改行をすべて表示
+  "editor.renderWhitespace": "all",
+
+  // サジェスト選択の初期値
+  "editor.suggestSelection": "first",
+
+  // Pythonの静的解析：importエラーを表示しない
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportMissingImports": "none"
+  },
+
+  // cSpellの辞書追加（スペルチェックの除外）
+  "cSpell.words": ["rgba", "flaskr", "db.Model"],
+
+  // HTMLHintの設定
+  "htmlhint.options": {
+    "doctype-first": false
+  },
+
+  // Python整形にBlackを使用
+  "python.formatting.provider": "black",
+
+  // Flake8によるスタイルチェック
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": ["--config=.flake8"],
+
+  // 保存時にimportを整理（isort連携）
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+
+  // isortの整形スタイルをBlackと一致させる
+  "python.sortImports.args": ["--profile", "black"]
+}
