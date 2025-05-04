@@ -21,7 +21,9 @@
 
   // HTMLHintの設定
   "htmlhint.options": {
-    "doctype-first": false
+    "doctype-first": false,
+    "tag-pair": true,
+    "attr-lowercase": true
   },
 
   // Python整形にBlackを使用

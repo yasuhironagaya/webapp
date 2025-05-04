@@ -6,6 +6,12 @@
     <title>このhtmlに共通部分を書く</title>
   </head>
   <body>
-    <h1>{{ title }}</h1>
+
+    <article>
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.body }}</p>
+      <p>{{ post.created_at }}</p>
+    </article>
+
   </body>
 </html>
